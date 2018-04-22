@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ExtJS in-domain AJAX call to ASP.NET WebService</title>
+
+	<script type="text/javascript" src="Scripts/extjs/adapter/ext/ext-base.js"></script>
+	<script type="text/javascript" src="Scripts/extjs/ext-all-debug.js"></script>
+	<link rel="stylesheet" href="Scripts/extjs/resources/css/ext-all.css"/>
+    <script type="text/javascript">
+
+        // Show path for ExtJS resources
+        Ext.BLANK_IMAGE_URL = "Scripts/extjs/resources/images/default/s.gif";
+        // Attach to onDOMReady event
+        Ext.onReady(onReady);
+
+        function onReady() {
+            // Create store
+            var store = new Ext.data.JsonStore({
+                autoLoad: true,
+                baseParams: { 'entityId': 30 },
+                proxy: new Ext.data.HttpProxy({
+                    url: 'SouthStarTitleWebService.asmx/GetUsersFromEntities', // ASP.NET WebService call in GET format
+                    
+                    headers: {
+                        'Content-type': 'application/json' // IMPORTANT! Without this FireFox will not understand WebService response 
+                    }
+                }),
+                root: 'd', // Root Json element, always 'd'
+                id: 'Id', // Identifier column, ExtJS needs it to recognize rows
+                fields: ['ID', 'FIRST_NAME', 'MIDDLE_NAME', 'LAST_NAME', 'EMAIL', 'USER_TYPE'] // Simple definition of columns
+            });
+
+            // Create grid to display data from store
+            var grid = new Ext.grid.GridPanel({
+                store: store, // Our store
+                columns: [ // Grid columns
+		            {dataIndex: 'ID', header: 'Id' },
+		            { dataIndex: 'FIRST_NAME', header: 'First Name' },
+		            { dataIndex: 'MIDDLE_NAME', header: 'Last Name' },
+		            { dataIndex: 'LAST_NAME', header: 'Birth Date' },
+                    { dataIndex: 'EMAIL', header: 'Email' },
+                    { dataIndex: 'USER_TYPE', header: 'User Type' }
+		        ],
+                renderTo: 'panel', // Render to HTML element with id=='panel'
+                width: 622,
+                height: 300
+            });
+        }
+    </script>
+</head>
+<body>
+<div id="panel">Could You see grid?</div>
+</body>
+</html>

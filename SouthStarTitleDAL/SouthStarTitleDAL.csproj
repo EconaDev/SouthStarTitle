@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97EB79DE-2525-4C10-9130-CC400A15649D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SouthStarTitleDAL</RootNamespace>
+    <AssemblyName>SouthStarTitleDAL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dao\AddressDao.cs" />
+    <Compile Include="Dao\LuUserTypeDao.cs" />
+    <Compile Include="Dao\RelUserEntityDao.cs" />
+    <Compile Include="Dao\DocumentsDao.cs" />
+    <Compile Include="Dao\LuStateDao.cs" />
+    <Compile Include="Dao\Support\BaseDao.cs" />
+    <Compile Include="Dao\Support\DaoManager.cs" />
+    <Compile Include="Dao\Support\Data\DbConstants.cs" />
+    <Compile Include="Dao\Support\Data\DbProviderFactory.cs" />
+    <Compile Include="Dao\Support\Data\DbProviderType.cs" />
+    <Compile Include="Dao\Support\Data\DbType.cs" />
+    <Compile Include="Dao\Support\Data\DbTypeConverter.cs" />
+    <Compile Include="Dao\Support\Data\IQuery.cs" />
+    <Compile Include="Dao\EntityDao.cs" />
+    <Compile Include="Dao\Support\Sql\Criteria.cs" />
+    <Compile Include="Dao\Support\Sql\CriteriaFactory.cs" />
+    <Compile Include="Dao\Support\Sql\CriteriaType.cs" />
+    <Compile Include="Dao\Support\Sql\DeleteQuery.cs" />
+    <Compile Include="Dao\Support\Sql\ICriteria.cs" />
+    <Compile Include="Dao\Support\Sql\IDeleteQuery.cs" />
+    <Compile Include="Dao\Support\Sql\IInsertQuery.cs" />
+    <Compile Include="Dao\Support\Sql\INonSelectQuery.cs" />
+    <Compile Include="Dao\Support\Sql\InsertQuery.cs" />
+    <Compile Include="Dao\Support\Sql\ISelectQuery.cs" />
+    <Compile Include="Dao\Support\Sql\ISqlQuery.cs" />
+    <Compile Include="Dao\Support\Sql\IUpdateQuery.cs" />
+    <Compile Include="Dao\Support\Sql\JoinType.cs" />
+    <Compile Include="Dao\Support\Sql\OrderBy.cs" />
+    <Compile Include="Dao\Support\Sql\QueryFactory.cs" />
+    <Compile Include="Dao\Support\Sql\QueryHelper.cs" />
+    <Compile Include="Dao\Support\Sql\SelectQuery.cs" />
+    <Compile Include="Dao\Support\Sql\SqlDeleteQuery.cs" />
+    <Compile Include="Dao\Support\Sql\SqlInsertQuery.cs" />
+    <Compile Include="Dao\Support\Sql\SqlSelectQuery.cs" />
+    <Compile Include="Dao\Support\Sql\SqlServerCriteria.cs" />
+    <Compile Include="Dao\Support\Sql\SqlUpdateQuery.cs" />
+    <Compile Include="Dao\Support\Sql\UpdateQuery.cs" />
+    <Compile Include="Dao\UserDao.cs" />
+    <Compile Include="Model\Address.cs" />
+    <Compile Include="Model\LuUserType.cs" />
+    <Compile Include="Model\Documents.cs" />
+    <Compile Include="Model\Entity.cs" />
+    <Compile Include="Model\LuState.cs" />
+    <Compile Include="Model\RelUserEntity.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SouthStarTitleCommon\SouthStarTitleCommon.csproj">
+      <Project>{12FDF97E-E99D-445F-871D-08FB0AFAEA41}</Project>
+      <Name>SouthStarTitleCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

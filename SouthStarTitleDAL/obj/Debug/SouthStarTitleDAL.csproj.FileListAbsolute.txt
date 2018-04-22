@@ -1,0 +1,28 @@
+C:\Users\Yvan\Documents\Visual Studio 2008\Projects\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleDAL.dll
+C:\Users\Yvan\Documents\Visual Studio 2008\Projects\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleDAL.pdb
+C:\Users\Yvan\Documents\Visual Studio 2008\Projects\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleCommon.dll
+C:\Users\Yvan\Documents\Visual Studio 2008\Projects\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleCommon.pdb
+C:\Users\Yvan\Documents\Visual Studio 2008\Projects\SouthStarTitle\SouthStarTitleDAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Yvan\Documents\Visual Studio 2008\Projects\SouthStarTitle\SouthStarTitleDAL\obj\Debug\SouthStarTitleDAL.dll
+C:\Users\Yvan\Documents\Visual Studio 2008\Projects\SouthStarTitle\SouthStarTitleDAL\obj\Debug\SouthStarTitleDAL.pdb
+C:\Users\Yvan\Documents\Visual Studio 2010\Projects\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleDAL.dll
+C:\Users\Yvan\Documents\Visual Studio 2010\Projects\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleDAL.pdb
+C:\Users\Yvan\Documents\Visual Studio 2010\Projects\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleCommon.dll
+C:\Users\Yvan\Documents\Visual Studio 2010\Projects\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleCommon.pdb
+C:\Users\Yvan\Documents\Visual Studio 2010\Projects\SouthStarTitle\SouthStarTitleDAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Yvan\Documents\Visual Studio 2010\Projects\SouthStarTitle\SouthStarTitleDAL\obj\Debug\SouthStarTitleDAL.dll
+C:\Users\Yvan\Documents\Visual Studio 2010\Projects\SouthStarTitle\SouthStarTitleDAL\obj\Debug\SouthStarTitleDAL.pdb
+C:\Projects\SouthStarTitle\SouthStarTitleDAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\SouthStarTitle\SouthStarTitleDAL\obj\Debug\SouthStarTitleDAL.dll
+C:\Projects\SouthStarTitle\SouthStarTitleDAL\obj\Debug\SouthStarTitleDAL.pdb
+C:\Projects\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleDAL.dll
+C:\Projects\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleDAL.pdb
+C:\Projects\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleCommon.dll
+C:\Projects\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleCommon.pdb
+C:\AppsVS2015\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleDAL.dll
+C:\AppsVS2015\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleDAL.pdb
+C:\AppsVS2015\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleCommon.dll
+C:\AppsVS2015\SouthStarTitle\SouthStarTitleDAL\bin\Debug\SouthStarTitleCommon.pdb
+C:\AppsVS2015\SouthStarTitle\SouthStarTitleDAL\obj\Debug\SouthStarTitleDAL.csprojResolveAssemblyReference.cache
+C:\AppsVS2015\SouthStarTitle\SouthStarTitleDAL\obj\Debug\SouthStarTitleDAL.dll
+C:\AppsVS2015\SouthStarTitle\SouthStarTitleDAL\obj\Debug\SouthStarTitleDAL.pdb

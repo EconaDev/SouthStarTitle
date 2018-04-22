@@ -1,0 +1,230 @@
+
+marcela 
+
+customer# 13756853
+pass manuel36
+pin#4143
+
+cbanegas@southstarmtg.com
+ftp: southstartitle\Santiago1
+
+
+southstartmtg\Santiago1#
+cbanegas@southstarmtg.com
+
+ftp: ssmuserftp\Santiago1#
+gmail api key : southstarmtg@gmail.com\Santiago1
+
+
+
+/****** Object:  StoredProcedure [dbo].[GetDocuments]   ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[GetDocuments]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[GetDocuments]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE dbo.GetDocuments
+
+@entityId int = 0
+
+AS
+    SET NOCOUNT ON;
+    
+    SELECT [ID], [FILENAME], [CREATED_TIMESTAMP], [UPDATED_TIMESTAMP] 
+    FROM [DOCUMENTS]
+    WHERE [ENTITY_ID] = @entityId;
+
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+
+
+
+
+/****** Object:  StoredProcedure [dbo].[SelectByRecordId]   ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SelectByRecordId]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[SelectByRecordId]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[SelectByRecordId]
+(
+	@id			nvarchar(256),
+	@table				nvarchar(500)
+)
+AS
+
+DECLARE @sqltemp nvarchar(650)
+
+SET @sqltemp = 'SELECT * FROM dbo.' + @table + ' WHERE  (RecordID = ''' + @id + ''')'
+
+EXEC sp_executeSql @sqltemp
+
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+
+
+
+
+/****** Object:  StoredProcedure [dbo].[InsertAddress]  ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[InsertAddress]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[InsertAddress]
+GO
+
+
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+
+
+CREATE PROCEDURE [dbo].[InsertEntityAddress]
+
+@streetAddress1 varchar(250),
+@streetAddress2 varChar(50),
+@city varChar(50),
+@state int,
+@zip varChar(5),
+@workPhone varChar(15),
+@faxPhone varChar(15),
+@otherPhone varChar(15)
+
+AS 
+INSERT [dbo].[ADDRESS]
+(
+	[STREET_ADDRESS_1],
+	[STREET_ADDRESS_2],
+	[CITY],
+	[STATE_ID],
+	[ZIP],
+	[HOME_PHONE],
+	[WORK_PHONE],
+	[CELL_PHONE],
+	[FAX_PHONE],
+	[OTHER_PHONE],
+	[ACTIVE_FLAG],
+	[CREATED_TIMESTAMP],
+	[UPDATED_TIMESTAMP]
+)
+VALUES
+(
+	@streetAddress1,
+	@streetAddress2,
+	@city,
+	@state,
+	@zip,
+	NULL,
+	@workPhone,
+	NULL,
+	@faxPhone,
+	@otherPhone,
+	1,
+	GETDATE(),
+	GETDATE()
+)
+
+RETURN SCOPE_IDENTITY()
+
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+
+
+
+
+
+/****** Object:  StoredProcedure [dbo].[InsertEntity]  ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[InsertEntity]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[InsertEntity]
+GO
+
+
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+
+CREATE PROCEDURE [dbo].[InsertEntity]
+
+@entityName varchar(250),
+@entityAddressId int
+
+AS 
+INSERT [dbo].[ENTITY]
+(
+	[ENTITY_NAME],
+	[ENTITY_ADDRESS_ID],
+	[ENTITY_DOCUMENT_ID],
+	[ACTIVE_FLAG],
+	[CREATED_TIMESTAMP],
+	[UPDATED_TIMESTAMP]
+)
+VALUES
+(
+	@entityName,
+	@entityAddressId,
+	NULL,
+	1,
+	GETDATE(),
+	GETDATE()
+)
+
+
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+
+
+
+/****** Object:  StoredProcedure [dbo].[DeleteDocumentById]  ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[DeleteDocumentById]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[DeleteDocumentById]
+GO
+
+
+
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE PROCEDURE [dbo].[DeleteDocumentById]
+
+@documentId int
+
+AS 
+
+DELETE FROM DOCUMENTS WHERE ID = @documentId
+
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO

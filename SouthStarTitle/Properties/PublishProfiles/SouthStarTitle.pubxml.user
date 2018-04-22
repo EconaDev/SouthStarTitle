@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\AppsVS2015\Deployments\SouthStarTitle</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AboutUs.aspx">
+      <publishTime>06/16/2010 08:30:06</publishTime>
+    </File>
+    <File Include="Admin.aspx">
+      <publishTime>09/11/2010 15:41:49</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>11/26/2010 21:02:28</publishTime>
+    </File>
+    <File Include="bin/FlashControl.dll">
+      <publishTime>03/23/2010 16:16:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>03/10/2016 14:26:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/SouthStarTitle.dll">
+      <publishTime>04/11/2018 21:11:49</publishTime>
+    </File>
+    <File Include="bin/SouthStarTitleBLL.dll">
+      <publishTime>09/20/2011 14:52:31</publishTime>
+    </File>
+    <File Include="bin/SouthStarTitleDAL.dll">
+      <publishTime>09/20/2011 14:52:30</publishTime>
+    </File>
+    <File Include="Calculator.aspx">
+      <publishTime>03/05/2011 20:24:53</publishTime>
+    </File>
+    <File Include="Client.aspx">
+      <publishTime>12/14/2010 01:15:59</publishTime>
+    </File>
+    <File Include="ClientFiles.aspx">
+      <publishTime>09/20/2011 12:30:14</publishTime>
+    </File>
+    <File Include="Contact.aspx">
+      <publishTime>08/29/2010 22:28:01</publishTime>
+    </File>
+    <File Include="Controls/AdminMenu.ascx">
+      <publishTime>12/17/2010 00:23:27</publishTime>
+    </File>
+    <File Include="Controls/ClientMenu.ascx">
+      <publishTime>12/16/2010 22:44:58</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>06/16/2010 08:30:06</publishTime>
+    </File>
+    <File Include="Entities.aspx">
+      <publishTime>08/07/2011 21:55:50</publishTime>
+    </File>
+    <File Include="Extended.Master">
+      <publishTime>04/10/2011 13:29:02</publishTime>
+    </File>
+    <File Include="Images/calculator.jpg">
+      <publishTime>06/17/2010 22:06:07</publishTime>
+    </File>
+    <File Include="Images/equalhouse.gif">
+      <publishTime>06/16/2010 15:46:53</publishTime>
+    </File>
+    <File Include="Images/extleftShadowdown.jpg">
+      <publishTime>08/14/2010 10:25:16</publishTime>
+    </File>
+    <File Include="Images/extleftShadowmiddle.jpg">
+      <publishTime>08/14/2010 10:25:16</publishTime>
+    </File>
+    <File Include="Images/extleftShadowup.jpg">
+      <publishTime>08/14/2010 10:25:16</publishTime>
+    </File>
+    <File Include="Images/gradient.jpg">
+      <publishTime>06/06/2010 21:59:46</publishTime>
+    </File>
+    <File Include="Images/landassoc.jpg">
+      <publishTime>06/10/2010 20:05:13</publishTime>
+    </File>
+    <File Include="Images/leftShadow.jpg">
+      <publishTime>06/06/2010 21:59:39</publishTime>
+    </File>
+    <File Include="Images/logo1.jpg">
+      <publishTime>06/06/2010 21:22:50</publishTime>
+    </File>
+    <File Include="Images/oldtown.jpg">
+      <publishTime>03/24/2010 00:38:02</publishTime>
+    </File>
+    <File Include="Images/realtor.jpg">
+      <publishTime>06/10/2010 20:08:24</publishTime>
+    </File>
+    <File Include="Images/resources.jpg">
+      <publishTime>06/17/2010 22:00:45</publishTime>
+    </File>
+    <File Include="Images/titlehandshake.jpg">
+      <publishTime>06/06/2010 17:19:53</publishTime>
+    </File>
+    <File Include="Images/titlehome1.jpg">
+      <publishTime>06/06/2010 18:56:58</publishTime>
+    </File>
+    <File Include="Images/titlehome1a.jpg">
+      <publishTime>06/10/2010 21:09:09</publishTime>
+    </File>
+    <File Include="Images/titlehome3.jpg">
+      <publishTime>06/06/2010 19:00:16</publishTime>
+    </File>
+    <File Include="Images/titlehome4.jpg">
+      <publishTime>06/06/2010 18:53:17</publishTime>
+    </File>
+    <File Include="Images/titlehome4a.jpg">
+      <publishTime>06/10/2010 21:11:02</publishTime>
+    </File>
+    <File Include="Images/titlehome5.jpg">
+      <publishTime>06/10/2010 21:15:27</publishTime>
+    </File>
+    <File Include="Images/titlekeys.jpg">
+      <publishTime>06/10/2010 21:19:36</publishTime>
+    </File>
+    <File Include="Images/titlesign.jpg">
+      <publishTime>06/06/2010 17:18:29</publishTime>
+    </File>
+    <File Include="Images/topShadow.jpg">
+      <publishTime>06/06/2010 22:00:00</publishTime>
+    </File>
+    <File Include="Images/Virginia_Title_Companies.jpg">
+      <publishTime>04/02/2010 14:19:25</publishTime>
+    </File>
+    <File Include="Location.aspx">
+      <publishTime>04/08/2018 19:06:04</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>12/14/2010 09:31:28</publishTime>
+    </File>
+    <File Include="Main.Master">
+      <publishTime>04/11/2018 20:52:03</publishTime>
+    </File>
+    <File Include="Members.aspx">
+      <publishTime>06/13/2011 10:49:01</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/08/2018 18:57:03</publishTime>
+    </File>
+    <File Include="Passwords.aspx">
+      <publishTime>12/12/2010 23:53:16</publishTime>
+    </File>
+    <File Include="Resources.aspx">
+      <publishTime>12/16/2010 22:29:14</publishTime>
+    </File>
+    <File Include="Services.aspx">
+      <publishTime>07/13/2010 21:33:36</publishTime>
+    </File>
+    <File Include="SouthStarTitleWebService.asmx">
+      <publishTime>03/26/2011 22:33:44</publishTime>
+    </File>
+    <File Include="Styles/Multiselect.css">
+      <publishTime>02/14/2011 20:28:11</publishTime>
+    </File>
+    <File Include="Styles/southstartitle.css">
+      <publishTime>04/24/2011 12:35:43</publishTime>
+    </File>
+    <File Include="TitleRequest.aspx">
+      <publishTime>08/30/2010 00:39:52</publishTime>
+    </File>
+    <File Include="UploadFiles.aspx">
+      <publishTime>06/09/2011 08:56:36</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/08/2018 19:29:19</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

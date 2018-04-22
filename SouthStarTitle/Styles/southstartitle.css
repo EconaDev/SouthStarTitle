@@ -1,0 +1,720 @@
+﻿
+/*	---------------------------------------------------------------------------------------
+	Typography
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+h1,h2,h3,h4,h5, h1 a,h2 a,h3 a,h4 a,h5 a {font-family:Trebuchet MS, Verdana, Arial, Helvetica, sans-serif}
+h2{font-size:24px;font-weight:normal}
+h3{font-size:18px; font-weight:normal}
+h4{font-size:16px; font-weight:bold}
+h5 {font-size:14px; font-weight:bold}
+
+/*	---------------------------------------------------------------------------------------
+	General styles
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Microsoft Sans Serif';
+	font-size: 13px;
+	font-weight: lighter;	
+}
+			
+p
+{
+	line-height: 150%;
+	color: #000;
+	font-family: 'Microsoft Sans Serif';
+	font-size: 12px;
+	padding: 0 0 10px 0;
+	height: 16px;
+}
+	
+.actionButton
+{
+	border-right: #8D8D8D 1px outset;
+	border-bottom: #8D8D8D 1px outset;
+	border-top: #E1E1E1 1px outset;
+	border-left: #E1E1E1 1px outset;
+	background-color: #cccccc;
+	font-size: 12px;
+	color: #242424;
+	text-decoration: none;
+	cursor: hand;
+	margin-left: 1px;
+	margin-right: 1px;
+	text-align: center;
+}	
+	
+	
+.dropdown
+{
+	font-size: 11px;
+	background: white;
+	color: #403d40;
+	padding: 0;
+	overflow: auto;
+	list-style: none;
+	border: solid 1px #666666;
+	scrollbar-face-color: #cccccc;
+	scrollbar-highlight-color: #eeeeee;
+	scrollbar-shadow-color: buttonface;
+	scrollbar-3dlight-color: #aaaaaa;
+	scrollbar-arrow-color: #696969;
+	scrollbar-track-color: #eeeeee;
+	scrollbar-darkshadow-color: #aaaaaa;
+	width: 337px;
+} 		
+		
+.listbox
+{
+	font-size: 11px;
+	background: white;
+	color: #403d40;
+	padding: 0;
+	overflow: auto;
+	list-style: none;
+	border: solid 1px #666666;
+	scrollbar-face-color: #cccccc;
+	scrollbar-highlight-color: #eeeeee;
+	scrollbar-shadow-color: buttonface;
+	scrollbar-3dlight-color: #aaaaaa;
+	scrollbar-arrow-color: #696969;
+	scrollbar-track-color: #eeeeee;
+	scrollbar-darkshadow-color: #aaaaaa;
+	width: 337px;
+}   		
+
+.listboxtitles
+{
+	color: #006600;
+	cursor: pointer;
+	padding-left: 2px;
+	line-height: 16px;
+	font-size: 11px;
+}
+			
+
+.resourcelinks
+{
+	color: #006600;
+	font-family: 'Microsoft Sans Serif';
+	outline: none;
+	text-decoration: underline;
+	font-size: 100%;
+}
+			
+.resourcelinks:hover
+{
+	color: #FF9900;
+}
+
+.resourcelinks:visited
+{
+	color: #990000;
+}	
+
+.error
+{
+	font-size: smaller;
+	color: #FF0000;
+}
+
+
+/*	---------------------------------------------------------------------------------------
+	Forms defaults
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+.gradient
+{
+	background-image: url('../Images/gradient.jpg');
+	width: 100%;
+	margin-top: 10px;
+	background-repeat: no-repeat;
+}
+
+.contactintro
+{
+	padding: 0 10px;
+	width: 60%;
+	font-size: 13px;
+	line-height: 22px;
+	color: #006600;
+	font-weight: lighter;
+}
+
+
+.contact
+{
+	font-family: 'Microsoft Sans Serif';
+	font-size: 13px;
+	color: #666666;
+	font-weight: lighter;
+}
+
+.contact-sub
+{
+	color: #0066FF;
+	border-bottom: 1px solid #EA8010;
+	text-align: left;
+	font-size: 24px;
+	font-weight: bold;
+	padding-left: 10px;
+	border-bottom-color: #003300;
+	font-family: 'Arial Black';
+}
+
+.program
+{
+	padding: 0 10px;
+	width: 60%;
+	font-size: 13px;
+	line-height: 22px;
+	color: #006600;
+	font-weight: lighter;
+}
+
+.programlist
+{
+	padding: 0 30px;
+	width: 60%;
+	font-size: 13px;
+	line-height: 22px;
+	color: #006600;
+	font-weight: lighter;
+	list-style-type: disc;
+}
+
+.service
+{
+	padding: 0 10px;
+	width: 60%;
+	font-size: 13px;
+	line-height: 22px;
+	color: #006600;
+	font-weight: lighter;
+}
+
+.servicelist
+{
+	padding: 0 30px;
+	width: 60%;
+	font-size: 13px;
+	line-height: 22px;
+	color: #006600;
+	font-weight: lighter;
+	list-style-type: disc;
+}
+
+.appraisal
+{
+	padding: 0 10px;
+	width: 60%;
+	font-size: 13px;
+	line-height: 22px;
+	color: #FFFFCC;
+	font-weight: lighter;
+}
+
+.content
+{
+	height: 100%;
+}
+
+.content-sub
+{
+	height: 95%;
+}
+
+.content-address
+{
+	font-family: 'Microsoft Sans Serif';
+	font-size: 12px;
+	color: #CC3300;
+	float: left;
+	font-weight: lighter;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: 10px;
+	vertical-align: text-bottom;
+	text-align: center;
+	position: relative;
+	height: 5%;
+	width: 936px;
+}
+
+.mainpageaddress
+{
+	font-family: 'Microsoft Sans Serif';
+	font-size: 12px;
+	color: #FF3300;
+	float: left;
+	font-weight: lighter;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: 10px;
+	vertical-align: text-bottom;
+	text-align: center;
+	position: relative;
+	height: 5%;
+	width: 936px;
+}
+
+.container 
+{	
+	padding: 0 10px;
+	width: 60%;
+	font-family: 'Microsoft Sans Serif';
+	font-size: 12px;
+	color: #666666;
+}
+
+.row1, .row2, .row3, .row4, .row5
+{
+	width: 100%;
+	float: left;
+	padding-bottom: 5px;
+}
+
+.input, .textarea, .dropdown
+{
+	font-family: 'Microsoft Sans Serif';
+	font-size: 11px;
+	color: #333333;
+}
+
+.contactTitlelabel
+{
+	color: #CC3300;
+	cursor: pointer;
+	padding-left: 2px;
+	line-height: 16px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.contactlabel
+{
+	color: #CC3300;
+	cursor: pointer;
+	padding-left: 2px;
+	line-height: 16px;
+	font-size: 11px;
+}
+
+
+.contactstatus 
+{	
+	padding: 0 10px;
+	width: 60%;
+	font-family: 'Microsoft Sans Serif';
+	font-size: 12px;
+	color: #666666;
+}
+
+.contactlabelstatus
+{
+	font-family: 'Microsoft Sans Serif';
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	color: #CC3300;
+}
+
+
+
+.titleOrderlabel
+{
+	color: #006600;
+	cursor: pointer;
+	padding-left: 2px;
+	line-height: 16px;
+	font-size: 11px;
+}
+
+
+.orderstatus 
+{	
+	padding: 0 10px;
+	font-family: 'Microsoft Sans Serif';
+	font-size: 12px;
+	color: #666666;
+}
+
+.orderlabelstatus
+{
+	font-family: 'Microsoft Sans Serif';
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	color: #CC3300;
+}
+
+
+
+
+/*	---------------------------------------------------------------------------------------
+	Contact Form
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+
+.row1col1, .row1col2,.row1col3
+{
+	width: 30%;
+	float: left;
+}
+
+
+.row2col1,.row2col2, .row2col3
+{
+	width: 30%;
+	float: left;
+}
+
+.row3col1, .row3col2, .row3col3
+{
+	width: 30%;
+	float: left;
+}
+
+.row4col2
+{
+	width: 100%;
+	float: left;
+}
+
+.row5col2
+{
+	width: 100%;
+	float: left;
+}
+
+
+.row1col1cel1top, 
+.row1col1cel1bottom, 
+.row1col2cel1top, 
+.row1col2cel1bottom,
+.row1col3cel1top, 
+.row1col3cel1bottom,
+.row2col1cel1top, 
+.row2col1cel1bottom, 
+.row2col2cel1top, 
+.row2col2cel1bottom, 
+.row2col3cel1top, 
+.row2col3cel1bottom, 
+.row3col1cel1top, 
+.row3col1cel1bottom,
+.row3col2cel1top, 
+.row3col2cel1bottom,
+.row3col3cel1top, 
+.row3col3cel1bottom,
+.row4col2cel1top, 
+.row4col2cel1bottom
+{
+	padding: 1px;
+}
+
+.row5col2cel1top, .row5col2cel1bottom
+{
+	padding: 1px 5px 1px 1px;
+	float: right;
+}
+
+
+
+/*	---------------------------------------------------------------------------------------
+	Footer
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+
+.footerleft
+{
+	margin: auto;
+	height: 32px;
+	color: #7e7e7e;
+	float: left;
+}
+
+.copyrightsymbol
+{
+	line-height: 16px;
+	color: #7e7e7e;
+	margin: 0;
+	display: block;
+	float: left;
+}
+
+.copyright
+{
+	line-height: 18px;
+	font-size: 11px;
+	color: #7e7e7e;
+	text-indent: 0;
+	text-align: left;
+	vertical-align: middle;
+	float: left;
+}
+
+.footerright
+{
+	color: #7e7e7e;
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: normal;
+	float: right;
+}
+
+.footerrightlink a
+{
+	color: #7e7e7e;
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: normal;
+	float: right;
+}
+
+.footerrightlink a:hover
+{
+	font-size: 11px;
+	text-decoration: underline;
+}
+
+
+
+
+
+/*	---------------------------------------------------------------------------------------
+	Main Menu
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+
+.lavaLampBottomStyle
+{
+	position: relative;
+	height: 29px;
+	width: 640px;
+	background-color: white;
+	overflow: hidden;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.lavaLampBottomStyle li
+{
+	float: left;
+	list-style: none;
+
+}
+
+.lavaLampBottomStyle li.back
+{
+	border-bottom: 5px solid blue;
+	width: 9px;
+	height: 30px;
+	z-index: 8;
+	position: absolute;
+	border-bottom-width: 2px;
+	border-bottom-color: #009900;
+}
+
+.lavaLampBottomStyle li a
+{
+	font: bold 11px arial;
+	text-decoration: none;
+	color: #666666;
+	outline: none;
+	top: 7px;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	z-index: 10;
+	display: block;
+	float: left;
+	height: 30px;
+	overflow: hidden;
+	margin: auto 10px auto 10px;
+	position: relative;
+}
+   
+.lavaLampBottomStyle li a:hover, .lavaLampBottomStyle li a:active, .lavaLampBottomStyle li a:visited
+{
+	border: none;
+}    
+
+.imgequalhousing
+{
+	float: left;
+	margin-top: 5px;
+	margin-left: 20px;
+}     
+
+.imgmortagehousingassc
+{
+	float: right;
+	margin-top: 5px;
+	height: 66px;
+	width: 79px;
+}                    
+
+
+
+
+/*	---------------------------------------------------------------------------------------
+	Calculator
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+
+
+.Thin
+{
+	font-size: 18px;
+	font-weight: normal;
+	color: #006600;
+}
+
+
+.ThinActive
+{
+	font-size: 18px;
+	font-weight: normal;
+	color: #FF3300;
+}
+
+
+.ContentContainer
+{
+	float: left;
+	text-align: center;
+}
+
+#Col1{
+	float: left;
+	width: 203px;
+	padding: 0 17px 13px 22px;
+	border-right: 1px dotted #c8c9cb;
+}
+
+#Col2{
+	float: left;
+	width: 155px;
+	padding: 3px 8px 0 18px;
+}
+
+#Col3{
+	float: left;
+	width: 154px;
+	padding: 3px 7px 0 10px;
+}
+
+#Col4{
+	float: left;
+	width: 158px;
+	padding: 3px 20px 0 9px;
+}
+
+#Calulator {
+	border-top:1px dotted #C8C9CB;
+	clear:both;
+	float:left;
+	margin:17px 17px 0;
+	text-align:center;
+	width:749px;
+}
+#Calulator a {
+	color:#056AAA;
+	text-decoration:none;
+}
+
+
+/************************
+*		Calculator		*
+************************/
+.vacalctable
+{
+	width: 270px;
+	font-size: 11px;
+	border: 0px solid #000;
+	margin: auto;
+}
+
+.mdcalctable
+{
+	width: 270px;
+	font-size: 11px;
+	border: 0px solid #000;
+	margin: auto;
+}
+
+.calclabel
+{
+	clear: left;
+	float: left;
+	padding-right: 10px;
+	padding-top: 7px;
+	text-align: right;
+	width: 120px;
+	color: Navy;
+	font-size: 12px;
+}
+
+.calinput {
+	margin-right: 50px;
+	float: left;
+	margin-bottom: 5px;
+	text-align: right;
+	width: 100px;
+}
+.calinput.Error {
+	background-color: #ffcccc;
+}
+
+.caltable
+{
+	font-size: 11px;
+	border: 1px solid #000;
+	margin: auto;
+}
+
+.calcHeader
+{
+	background-color: #CCCCFF;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+
+/************************
+*		Clear Fix		*
+*************************/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
